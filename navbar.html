@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -144,7 +145,136 @@
             width: 80%;
             margin: auto;
         }
-     
+        #down{
+            width: 95%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+           margin: auto;
+           margin-top: 40px;
+            
+        }
+        #mobile>img{
+            width: 90%;
+        }
+        #form{
+            width: 80%;
+            text-align: left;
+            
+            margin-left: 50px;
+        }
+        #form>h2{
+            font-size: 40px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 120px;
+        }
+        #form>p{
+         font-size: 25px;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        #check{
+            width: 200px;
+        }
+        #num{
+            width: 500px;
+            height: 50px;
+            border: 0.5px solid rgb(156, 156, 227);
+            margin-bottom: 30px;
+        }
+       #sub{
+        width: 500px;
+            height: 50px;
+            border: 0.5px solid rgb(156, 156, 227);
+            font-size: 30px;
+       }
+       #store{
+        width: 80%;
+       display: flex;
+       
+        margin-top: 30px;
+       }
+       #store>h3{
+            width: 150px;
+           margin: left;
+          font-size: 20px ;
+          margin-top: 20px;
+       }
+       #store>img{
+        width: 150px;
+       }
+      
+       #color{
+        width: 100%;
+        margin-bottom: -10px;
+       }
+       #footer{
+        width: 100%;
+        height: 1000px;
+       margin: auto;
+        background-color: #064037;
+       
+        padding-top: 20px;
+       }
+       #top{
+        display: flex;
+       }
+       #top>div:nth-child(1){
+           
+           width: 20%;
+           margin-left: 50px;
+           font-size: 20px;
+           font-family:cursive;
+           color: white;
+           
+       }
+       #top>div:nth-child(1)>img{
+        width: 70%;
+       }
+       #top>div:nth-child(2){
+      
+           width: 20%;
+           margin-left: 50px;
+           font-size: 20px;
+       font-family:cursive;
+           color: white;
+        }
+        #top>div:nth-child(3){
+       
+           width: 20%;
+           margin-left: 50px;
+           font-size: 20px;
+       font-family:cursive;
+        
+           color: white;
+          }
+        #top>div:nth-child(4){
+      
+           width: 20%;
+           margin-left: 50px;
+           font-size: 20px;
+       font-family:cursive;
+           color: white;
+                         }
+        #top>div:nth-child(4)>div{
+        display: flex;
+         }
+         #bottom{
+            width: 90%;
+            margin: auto;
+            color: white;
+            text-align: justify;
+            font-family:sans-serif;
+         }
+         #last{
+            text-align: center;
+            margin-bottom: 100px;
+         }
+      
+       
+      
+
+       
+        
 
     </style>
 </head>
@@ -162,7 +292,7 @@
             <input id="search" type="text" placeholder="           Find Fresh vegitables and fruits and dairy product">
         </div>
         <div>
-           <div id="add">Add To Cart</div> 
+           <div id="add"> Cart</div> 
         </div >
         <div>
             <div>Credit</div> 
@@ -172,7 +302,7 @@
          </div>
        
     </div>
-    
+     
     <div id="product">
         <div id="main">
             <img id="crauser" src="https://imageprod.fraazo.com/fraazo-prod/web_ban/4924.png" alt="">
@@ -190,19 +320,97 @@
    
 
     <div id="middle">
-          <div><img src="https://imagemaster.fraazo.com/fraazo-master/webban/Fruits.png" alt=""></div>
-          <div><img src="https://imagemaster.fraazo.com/fraazo-master/webban/Vegetables.png" alt=""></div>
+          <div id="fruit"><img src="https://imagemaster.fraazo.com/fraazo-master/webban/Fruits.png" alt=""></div>
+          <div  id="vegi"><img src="https://imagemaster.fraazo.com/fraazo-master/webban/Vegetables.png" alt=""></div>
     </div>
-    <h1>CLICK tgitO BUY</h1>
+    <h1>CLICK TO BUY</h1>
 
-     
+     <div id="down">
+        <div id="mobile">
+            <img src="https://webasset.fraazo.com/production/app-screen.64b2c07bae4a9c5a4ec4.png" alt="">
+        </div>
+        <div id="form">
+            <h2>Download This App</h2>
+            <p>Enter your phone number to receive a text with a link to download the app</p>
+            <form action="">
+                <input id="num" type="number" placeholder="Enter your Mobile Number">
+                <br>
+                <input id="sub" type="submit">
+            </form>
+            <div id="store">
+                <h3>Available on</h3>
+                <img  src="https://webasset.fraazo.com/production/googleplaystore.863bf06a3d2d326a5b94.png" alt="">
+                <img src="https://webasset.fraazo.com/production/appstore.a8155c5772ea7d80d435.png" alt="">
+            </div>
+           
+        </div>
+
+     </div>
+
+     <img id="color" src="https://webasset.fraazo.com/production/a72cf5cd03bd56f4be37fa1c4ce7062d.svg" alt="">
     
      
-    
+     <div id="footer">
+        <div id="top">
+            <div >
+                <img src="https://webasset.fraazo.com/production/f01ccf2737aa24558c3808178effa5fb.svg" alt="">
+                 <p>Order online vegetables & fruits
+                    directly from the farm. Fraazo is
+                    online platform that allows customer
+                    to get farm fresh produce directly
+                    from farmers.</p>
+            </div>
+            <div>
+                <h3>Useful Links</h3>
+                <h5>Privacy Policy</h5>
+                <h5>FAQ</h5>
+                <h5>Terms & Conditions</h5>
+                
+            </div>
+            <div>
+                <h3>Cities We Serve</h3>
+                <h5>Mumbai</h5>
+                <h5>Hydrabad</h5>
+                <h5>Bangalore</h5>
+                <h5>Delhi</h5>
+                <h5>Noida</h5>
+                <h5>Gurugram</h5>
+                <h5>Pune</h5>
+            </div>
+            <div>
+                <h3>Connect with us</h3>
+                <h5>support@fraazo.com</h5>
+                <h5>+91 9152291522</h5>
+                <h3>Download The App</h3>
+                <div>
+                    <img src="https://webasset.fraazo.com/production/footer-g-play.53194b32f1f28968b89e.png" alt="">
+                    <img src="https://webasset.fraazo.com/production/footer-appstore.b90f071a00b68166f2af.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <h1>Fresh Fruits & Vegetables Grocery Shopping Online</h1>
+            <p>
+                The quality of fruits & vegetables is synonymous with its freshness, while getting fresh fruits and vegetables is a tedious task at times but with Fraazo you can get it delivered at your doorstep. Fraazo brings a wide range of farm fresh fruits, vegetables and dairy products to you, all in just a click. We currently serve about more than 3lacs+ happy customers in Mumbai, Navi Mumbai, Thane, Kalyan-Dombivli and Virar. Fraazo has made online shopping of fresh produce much easier with its hassle-free home delivery options. You can choose the delivery slot as per your choice and schedule your order accordingly. Or you can simply opt for the option of 90 mins Express Delivery and get your order delivered in not more than 90 mins. The farm fresh fruits and vegetables on Fraazo are available at best prices compared to other vendors & supermarkets. Plus with so many exciting offers, one can save up to 20% on their Monthly grocery budgets. No need to wait in long queues in crowded supermarkets or local mandis for getting the best prices on veggies. Kick the stress out & just Fraazo your dose of freshness with savings at the comfort of your home. Fraazo directly sources fresh fruits and veggies from an extensive network of farmers across Maharashtra, hence bringing you fresh produce straight from farm to table in less than 18 hours. With our Safe & Hygienic packaging and minimal multiple handling, we ensure you get the best quality fresh produce.
+
+
+            </p>
+
+            <p>
+                The fruits and vegetables are 100% hand-picked fresh from farm, while some products are hydroponically-grown. The wide range of fruits and veggies on Fraazo include more than 100+ farm fresh vegetables and fruits, starting from regular veggies like dudhi, cauliflower, beetroot, cabbage, etc. to exotic veggies like broccoli, lettuce etc. We also provide the essential vegetable combos like Onion, Potato, Tomato Combo, Salad Combo, Fresh Cut-Veg Combos or Fruit Combos like Banana, Apple Combo, & more. There are a lot of exciting deals on vegetables & fruits, every day of the week, the major highlights being Monday Mandi, Veggie Wednesday, Freelivery Thursday & Fruit Friday.For payments, you can choose from the multiple payment options as Fraazo accepts Debit card, Credit card, UPI options like iMobile, Google Pay, 8+ e-Wallet options like Phonepe, JioPay, MobiKwik, Sodexo, NetBanking and Cash on Delivery (COD). If you ever have an issue with missing items or any quality issue, you can raise your concern with us in 48 hrs & we shall refund/ replace your product with “no-questions-asked-policy”. You can simply connect with our Customer Support team via Chat Support or Call on 9152291522.
+            </p>
+            <p>
+                _______________________________________________________________________________________________________________________________________________________________
+
+            </p>
+            <p id="last">© Copyrights 2021 - 2022. Fraazo. All Rights Reserved.</p>
+        </div>
+        
+     </div>
+
+
 
     
 </body>
 
 </html>
- 
-
