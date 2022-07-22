@@ -1,0 +1,276 @@
+#navbar{
+    width: 95%;
+     height: 100px;
+    position: fixed;
+    top: 0px;
+   background-color: white;
+     display: flex;
+     padding-left: 30px;
+     padding-right: 30px;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+ }
+ #navbar>div{
+     width: 200px;
+     height: 100%;
+     /* border: 1px solid red; */
+     text-align: center;
+     margin: auto;
+      }
+ h4{
+     margin-top: -10px;
+     color: rgb(69, 194, 219);
+ }
+ #logo>img{
+     margin-top: 20px;
+     width: 100%;
+ }
+ #location>img{
+     width: 30%;
+     margin-top: 25px;
+    
+ }
+ #navbar>div:nth-child(3){
+     width: 800px;
+ }
+ #navbar>div:nth-child(4)>div{
+     width:100px;
+     height: 25px;
+    margin-top: 40px;
+    display: flex;
+   margin-left: 45px;
+ 
+  
+ }
+ #navbar>div:nth-child(5)>div{
+     width:100px;
+     height: 25px;
+     display: flex;
+    margin-top: 40px;
+  margin-left: 45px;
+ }
+ #navbar>div:nth-child(6)>div{
+     width:100px;
+     height: 25px;
+     display: flex;
+    margin-top: 40px;
+    text-align: center;
+   margin-left: 45px;
+ }
+ #search{
+     width: 700px;
+     height: 40px;
+     border-radius: 25px;
+     margin-top: 25px;
+ }
+
+ #product{
+     width: 90%;
+     height: 400px;
+  
+     margin: auto;
+     margin-top: 150px;
+     display: flex;
+ }
+ #product>div:nth-child(1){
+     width: 60%;
+     margin: auto;
+ }
+ #product>div:nth-child(2){
+     width: 30%;
+   
+    height: 380px;
+     margin: auto;
+     margin-left: 30px;
+ }
+ #product img{
+     width: 100%;
+ }
+ #farmer>div>img{
+     width: 100%;
+     height: 110px;
+   
+ }
+ #farmer>div{
+     width: 100%;
+     height: 35%;
+
+   
+ }
+
+ #main>img{
+     height: 380px;
+    
+}
+
+#main>button{
+
+ top: 40%;
+background-color: rgba(60, 64, 67, 0.1  );
+font-size: 50px;
+color: rgb(190, 20, 20);
+border: none;
+
+
+}
+
+#main>button:nth-child(2){
+ left: 120px;
+ position: absolute;
+
+}
+#main>button:nth-child(3){
+ right: 600px;
+ position: absolute;
+}
+ H1{
+     text-align: center;
+     margin-top: 20px;
+     color: rgb(105, 243, 119);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ #middle{
+     width: 50%;
+     margin: auto;
+    display: flex;
+     margin-top: 50px;
+ }
+ #middle>div{
+     text-align: center;
+  }
+ #middle>div>img{
+     width: 80%;
+     margin: auto;
+ }
+ #down{
+     width: 95%;
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    margin-top: 40px;
+     
+ }
+ #mobile>img{
+     width: 90%;
+ }
+ #form{
+     width: 80%;
+     text-align: left;
+     
+     margin-left: 50px;
+ }
+ #form>h2{
+     font-size: 40px;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin-top: 120px;
+ }
+ #form>p{
+  font-size: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ }
+ #check{
+     width: 200px;
+ }
+ #num{
+     width: 500px;
+     height: 50px;
+     border: 0.5px solid rgb(156, 156, 227);
+     margin-bottom: 30px;
+ }
+#sub{
+ width: 500px;
+     height: 50px;
+     border: 0.5px solid rgb(156, 156, 227);
+     font-size: 30px;
+}
+#store{
+ width: 80%;
+display: flex;
+
+ margin-top: 30px;
+}
+#store>h3{
+     width: 150px;
+    margin: left;
+   font-size: 20px ;
+   margin-top: 20px;
+}
+#store>img{
+ width: 150px;
+}
+
+#color{
+ width: 100%;
+ margin-bottom: -10px;
+}
+#footer{
+ width: 100%;
+ height: 1000px;
+margin: auto;
+ background-color: #064037;
+
+ padding-top: 20px;
+}
+#top{
+ display: flex;
+}
+#top>div:nth-child(1){
+    
+    width: 20%;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family:cursive;
+    color: white;
+    
+}
+#top>div:nth-child(1)>img{
+ width: 70%;
+}
+#top>div:nth-child(2){
+
+    width: 20%;
+    margin-left: 50px;
+    font-size: 20px;
+font-family:cursive;
+    color: white;
+ }
+ #top>div:nth-child(3){
+
+    width: 20%;
+    margin-left: 50px;
+    font-size: 20px;
+font-family:cursive;
+ 
+    color: white;
+   }
+ #top>div:nth-child(4){
+
+    width: 20%;
+    margin-left: 50px;
+    font-size: 20px;
+font-family:cursive;
+    color: white;
+                  }
+ #top>div:nth-child(4)>div{
+ display: flex;
+  }
+  #bottom{
+     width: 90%;
+     margin: auto;
+     color: white;
+     text-align: justify;
+     font-family:sans-serif;
+  }
+  #last{
+     text-align: center;
+     margin-bottom: 100px;
+  }
+  .cart{
+ width: 18px;
+ 
+  }
+  .add h5{
+     margin-top: 2px;
+     margin-left: 10px;
+  }

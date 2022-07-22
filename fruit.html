@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit</title>
+    <style>
+         h1{
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        #container{
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            padding: 20px;
+        }
+        #container>div:hover{
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+           background-color:whitesmoke;
+            
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            background-color: lightblue;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1><b><i>FRUITS</i></b></h1>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    let fruit_arr=[
+        {img:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/157/original/data?width=256&height=256",
+        name:"Pineapple",
+        price:71},
+        {img:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/261/original/data?width=256&height=256",
+        name:"Pomegranate(Anar)",
+        price:139},
+        {img:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/006/original/data?width=256&height=256",
+        name:"Royal_gala_apple",
+        price:149},
+        {img:"https://imagemaster.fraazo.com/fraazo-master/products/FBAN14.png?width=256&height=256",
+        name:"Banana",
+        price:51},
+        {img:"https://imagemaster.fraazo.com/fraazo-master/products/FCOC1.png?width=256&height=256",
+        name:"Coconut",
+        price:27},
+        {img:"https://imagemaster.fraazo.com/fraazo-master/products/FMUS1.png?width=256&height=256",
+        name:"Khabhuja",
+        price:72},
+        {img:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/117/original/data?width=256&height=256",
+        name:"Watermelon",
+        price:46},
+        {img:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/096/original/data?width=256&height=256",
+        name:"Green_pear",
+        price:101},
+        {img:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/338/original/data?width=256&height=256",
+        name:"Imported_orange",
+        price:91},
+        {img:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/007/361/original/data?width=256&height=256",
+        name:"Papita",
+        price:60},
+    ]
+    
+    let fruit=document.querySelector("#container")
+
+
+    fruit_arr.forEach(function(ele){
+           let box=document.createElement("div")
+
+           let img=document.createElement("img")
+           img.setAttribute("src",ele.img)
+
+           let name=document.createElement("h2")
+           name.innerText=ele.name
+
+           let price=document.createElement("h3")
+           price.innerText="Price :- "
+           let p=document.createElement("span")
+           p.innerText=ele.price
+           let kg=document.createElement("bold")
+           kg.innerText=" kg"
+           price.append(p,kg)
+
+           let btn=document.createElement("button")
+           btn.innerText="Add to cart"
+           btn.addEventListener("click",function(event){
+              event.preventDefault()
+            addtocart(ele)
+           })
+
+
+           box.append(img,name,price,btn)
+           fruit.append(box)
+    })
+
+   let fruitarr=JSON.parse(localStorage.getItem("CART"))||[]
+  console.log(fruitarr.length)
+    function addtocart(ele){
+        fruitarr.push(ele)
+        console.log(fruitarr.length)
+          localStorage.setItem("CART",JSON.stringify(fruitarr))
+          console.log(fruitarr.length)
+    }
+  
+</script>
