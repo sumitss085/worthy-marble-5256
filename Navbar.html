@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>Fresh Fruits & Vegetables Grocery Shopping Online</title>
     <link rel="stylesheet" href="./Navbar.css" />
+    <style>
+        .menu{
+            width: 200px;
+          margin-left: 500px;
+        margin-top: 100px;
+    
+        }
+        .menu ul{
+            display: inline-flex;
+            list-style: none;
+         text-align: center;
+          
+          
+            
+        }
+        .menu ul li{
+            width: 150px;
+            margin: 5px;
+           
+        }
+        .menu ul li a{
+          text-decoration: none;
+            color:brown;
+           
+            }
+        .sub {
+            display: none;
+            text-align: left;
+        }
+        .menu ul li:hover{
+          background: burlywood;
+    }
+        .menu ul li:hover .sub{
+        display: block;
+        width: 200px;
+        position: absolute;
+        background:white;
+        margin-top: 5px;
+        margin-left: -5px;
+        }
+        .menu ul li:hover .sub ul{
+       display: block;
+       width: 80px;
+      
+        }
+        .menu ul li:hover .sub ul li{
+      width: 150px;
+      padding: 10px;
+      border-bottom: 1px dotted black;
+      background: transparent;
+      border-radius:  0;
+      text-align: left; 
+    }
+      .menu ul li:hover .sub ul li:last-child{
+        border-bottom: none;
+    }
+    .menu ul li:hover .sub ul li a:hover{
+      color: blue;
+    }
+    </style>
 </head>
 <body>
 
@@ -33,10 +93,11 @@
             </div> 
            
         </div >
-         <div>
-            <div class="add"> 
+        <div>
+        <div class="add"> 
                 <div class="cart">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wallet" class="svg-inline--fa fa-wallet fa-1x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 32C465.7 32 480 46.33 480 64C480 81.67 465.7 96 448 96H80C71.16 96 64 103.2 64 112C64 120.8 71.16 128 80 128H448C483.3 128 512 156.7 512 192V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H448zM416 336C433.7 336 448 321.7 448 304C448 286.3 433.7 272 416 272C398.3 272 384 286.3 384 304C384 321.7 398.3 336 416 336z"></path></svg>
+                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wallet" class="svg-inline--fa fa-wallet fa-1x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 32C465.7 32 480 46.33 480 64C480 81.67 465.7 96 448 96H80C71.16 96 64 103.2 64 112C64 120.8 71.16 128 80 128H448C483.3 128 512 156.7 512 192V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H448zM416 336C433.7 336 448 321.7 448 304C448 286.3 433.7 272 416 272C398.3 272 384 286.3 384 304C384 321.7 398.3 336 416 336z"></path>
+                    </svg>
                     
                 </div>
                 
@@ -50,11 +111,51 @@
                     
                 </div>
                 
-                <div><h5>LOGIN</h5></div>
+                <div>
+                    <div>
+                        <button type="submit" class="btn" onclick="openpopup()"><b>Login</b> </button>
+                    </div>
+                   
+                    <div class="popup" id="popup">
+                        <h2>Welcome to Fraazo!</h2>
+                        <h3>Sign In to track your Order and More.</h3>
+                        <input id="input" type="text" placeholder="Enter Your Mobile Number">
+                        <p>We will send you an OTP on this number</p>
+                        <button id="get" onclick="closepopup()">Get OTP</button>
+                    </div>
+                    
+                </div>
+                
              </div> 
-            
+             
          </div >
        
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Fruits</a>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Exotic Fruit</a></li>
+                        <li><a href="#">Fresh Fruit</a></li>
+                        <li><a href="#">Fruit combos</a></li>
+                        <li><a href="#">Mangoes</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Vegitables</a>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Daily veggies</a></li>
+                        <li><a href="#">Herbs and leafies</a></li>
+                        <li><a href="#">Exotic Vegitable</a></li>
+                        <li><a href="#">Cut,peeled and sprouts</a></li>
+                        <li><a href="#">Vegitable combos</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </div>
      
     <div id="product">

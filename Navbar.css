@@ -1,4 +1,6 @@
-#navbar{
+
+ /* start of css for navbar  */
+ #navbar{
     width: 95%;
      height: 100px;
     position: fixed;
@@ -62,13 +64,67 @@
      border-radius: 25px;
      margin-top: 25px;
  }
+ /* end of css for navbar  */
+
+ /* start of css for login popup page */
+ .btn{
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+ 
+
+ }
+ .popup{
+    width: 400px;
+    background: rgb(211, 235, 227);
+    border: 1px solid rgb(113, 113, 194);
+    border-radius: 15px;
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: left;
+    padding: 0 30px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    visibility: hidden;
+    transition:transform 0.4s,top 0.4s;
+ }
+ .popup input{
+    width: 200px;
+    height: 30px;
+ 
+ outline: none;
+ background: rgb(211, 235, 227);
+ border-top: 1px;
+ border-left: 1px;
+ border-right: 1px;
+
+}
+.popup button{
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    margin-left: 130px;
+    border: none;
+    background: rgb(34, 147, 184);
+}
+
+.open_popup{
+    visibility: visible; 
+    transform: translate(-50%,-50%) scale(1) ;
+    top: 400%;
+    left: 50%;
+}
+ /* end of css for login popup page */
 
  #product{
      width: 90%;
      height: 400px;
   
      margin: auto;
-     margin-top: 150px;
+     margin-top: 20px;
      display: flex;
  }
  #product>div:nth-child(1){
@@ -99,28 +155,23 @@
 
  #main>img{
      height: 380px;
-    
+ 
 }
 
 #main>button{
-
- top: 40%;
+top: 45%;
 background-color: rgba(60, 64, 67, 0.1  );
 font-size: 50px;
 color: rgb(190, 20, 20);
-border: none;
-
-
-}
+border: none;}
 
 #main>button:nth-child(2){
- left: 120px;
- position: absolute;
-
+position: absolute;
+left: 120px;
 }
 #main>button:nth-child(3){
- right: 600px;
- position: absolute;
+    position: absolute;
+    right: 590px;
 }
  H1{
      text-align: center;
@@ -274,3 +325,10 @@ font-family:cursive;
      margin-top: 2px;
      margin-left: 10px;
   }
+
+  
+
+ 
+  
+
+

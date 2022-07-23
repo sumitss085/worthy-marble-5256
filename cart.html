@@ -1,163 +1,243 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my cart</title>
-  </head>
-  <style>
-    #top{
-      width: 100%;
-    background-color: white;
-    
-     text-align: center;
-     position: fixed;
-     top: 0px;
-     margin: auto;
-   }
-   #bottom{
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    position: fixed;
-    bottom: 0px;
- 
-    background-color: beige;
-   }
-    img{
-        width: 150px;
-    }
-    #container{
-        width: 80%;
-       
-        margin: auto;
-        margin-top: 200px;
-        margin-bottom: 150px;
-    }
-    #container>div{
-        width: 65%;
-         height: auto;
-         display: flex;
-         margin: auto;
-         margin-bottom: 20px;
-         box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-       
-    }
-    #container>div>div:nth-child(1){
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    }
-    #container>div>div:nth-child(2){
-        width: 200px;
-        margin-left: 30px;
-    }
-    #container>div>div:nth-child(3){
-      width: 200px;
-       margin-left:200px;
-      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CART</title>
+</head>
+<link rel="stylesheet" href="./Navbar.css">
+<style>
   
-    }
-   
-    h3{
-        margin-top: 50px;
-    }
-    h5{
-        margin-bottom: 60px;
-        margin-left:100px;
-        font-size: 20px;
-    }
-    input{
-        width: 40px;
-        margin-left: 100px;
-    }
-  </style>
-  <body>
-    <div  id="top"> 
-      <h1>My cart :- <b>(<span> 0 </span><b>   item</b>)</b></h1>
+ #bottom{
+display: flex;
+  width: 100%;
+  height: 100px;
+ position: fixed;
+  bottom: 0px;
+  background-color: white;
+ }
+ #bottom>div{
+  text-align: center;
+  margin: auto;
+  font-size: 10px;
+  color: black;
+  
+  margin-left: 500px;
+  margin-right: -300px;
+ }
+  img{
+      width: 150px;
+  }
+  #container{
+      width: 80%;
      
+      margin: auto;
+      margin-top: 120px;
+      margin-bottom: 150px;
+  }
+  #container>div{
+      width: 65%;
+       height: auto;
+       display: flex;
+       margin: auto;
+       margin-bottom: 20px;
+       box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+     
+  }
+  #container>div>div:nth-child(1){
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  #container>div>div:nth-child(2){
+      width: 200px;
+      margin-left: 30px;
+  }
+  #container>div>div:nth-child(3){
+    width: 200px;
+     margin-left:200px;
     
+
+  }
+ 
+  #container h3{
+      margin-top: 50px;
+  }
+  #container h5{
+      margin-bottom: 60px;
+      margin-left:100px;
+      font-size: 20px;
+  }
+  #container input{
+      width: 40px;
+      margin-left: 100px;
+  }
+</style>
+<body>
+  <div id="navbar">
+    <div id="logo">
+      <img src="https://webasset.fraazo.com/production/b70a67f4e825e3d388ac4466952c20a8.svg" alt="">  
+    </div>
+    <div id="location">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV1Ia-yJneyL6AqNChyjqITnGbs3CX768DtQ&usqp=CAU" alt="">
+        <h4>Pawai</h4>
+    </div>
+    <div>
+        <input id="search" type="text" placeholder="           Find Fresh vegitables and fruits and dairy product">
     </div>
     
-     
-
-     <div id="container"></div>
-     <div id="bottom">
-      <h1>Cart price:- <span id="price">0</span></h1>
+    <div>
+      <div class="add"> 
+              <div class="cart">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wallet" class="svg-inline--fa fa-wallet fa-1x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 32C465.7 32 480 46.33 480 64C480 81.67 465.7 96 448 96H80C71.16 96 64 103.2 64 112C64 120.8 71.16 128 80 128H448C483.3 128 512 156.7 512 192V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H448zM416 336C433.7 336 448 321.7 448 304C448 286.3 433.7 272 416 272C398.3 272 384 286.3 384 304C384 321.7 398.3 336 416 336z"></path></svg>
+                  
+              </div>
+              
+              <div><h5>CREDIT</h5></div>
+        </div> 
      </div>
-     
-  </body>
-  </html>
-  <script>
-    let cartarr=JSON.parse(localStorage.getItem("CART"))||[]
-
-
-    let container=document.querySelector("#container")
-  let totalitem=document.querySelector("span")
-  let price=document.querySelector("#price")
-  totalitem.innerHTML=cartarr.length
- 
-    display(cartarr)
-
-   
-    function display(data,quantity){
-      document.querySelector("#container").innerText=""
-        let total=0
-        data.forEach(function(ele,index){
-          total=total+ele.price
-        let div=document.createElement("div")
-          
-        let img=document.createElement("div")
-        let image=document.createElement("img")
-        image.setAttribute("src",ele.img)
-        img.append(image)
-
-        let name=document.createElement("div")
-        let p_name=document.createElement("h2")
-        p_name.innerText=ele.name
-        let p_price=document.createElement("h3")
-        p_price.innerText= "price :-  "+ ele.price
-        name.append(p_name,p_price)
-
-        let div3=document.createElement("div")
-        let remv=document.createElement("h5")
-        remv.innerText="remove"
-        remv.addEventListener("click",function(event){
-          event.preventDefault()
-          del(index)
-        })
-        let qty=document.createElement("input")
-        qty.setAttribute("type","Number")
-       let q=qty.value
-       qty.addEventListener("input",function(){
-        event.preventDefault()
-        quantiy(q,total)
-       })
-        div3.append(remv,qty)
-
-        div.append(img,name,div3)
-        container.append(div)
-        price.innerText=total
+     <div>
+        <div class="add"> 
+            <div class="cart">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-1x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path></svg>
+                
+            </div>
+            
+            
+            <div>
+              <div>
+                  <button type="submit" class="btn" onclick="openpopup()"><b>Login</b> </button>
+              </div>
+             
+              <div class="popup" id="popup">
+                  <h2>Welcome to Fraazo!</h2>
+                  <h3>Sign In to track your Order and More.</h3>
+                  <input id="input" type="text" placeholder="Enter Your Mobile Number">
+                  <p>We will send you an OTP on this number</p>
+                  <button id="get" onclick="closepopup()">Get OTP</button>
+              </div>
+              
+          </div>
+               
+               
+                
+            
+            
+         </div> 
          
-      
-    })
+     </div >
    
+</div>
+  
+  
+   
+
+   <div id="container"></div>
+  
+   <div id="bottom">
+   <div>
+    <h1>Cart price:- <span id="price">0</span></h1>
+   </div> 
+   <div>    <h1>My cart :- <b>(<span id="item"> 0 </span><b>   item</b>)</b></h1></div>
+
+
+   </div>
+   
+</body>
+</html>
+<script>
+  let cartarr=JSON.parse(localStorage.getItem("CART"))||[]
+
+
+  let container=document.querySelector("#container")
+let totalitem=document.querySelector("#item")
+let price=document.querySelector("#price")
+totalitem.innerText=cartarr.length
+
+  display(cartarr)
+
+ 
+  function display(data,quantity){
+    document.querySelector("#container").innerText=""
+      let total=0
+      data.forEach(function(ele,index){
+        total=total+ele.price
+      let div=document.createElement("div")
+        
+      let img=document.createElement("div")
+      let image=document.createElement("img")
+      image.setAttribute("src",ele.img)
+      img.append(image)
+
+      let name=document.createElement("div")
+      let p_name=document.createElement("h2")
+      p_name.innerText=ele.name
+      let p_price=document.createElement("h3")
+      p_price.innerText= "price :-  "+ ele.price
+      name.append(p_name,p_price)
+
+      let div3=document.createElement("div")
+      let remv=document.createElement("h5")
+      remv.innerText="remove"
+      remv.addEventListener("click",function(event){
+        event.preventDefault()
+        del(index)
+      })
+      let qty=document.createElement("input")
+      qty.setAttribute("type","Number")
+     let q=qty.value
+     qty.addEventListener("input",function(){
+      event.preventDefault()
+      quantiy(q,total)
+     })
+      div3.append(remv,qty)
+
+      div.append(img,name,div3)
+      container.append(div)
+      price.innerText=total
+       
+    
+  })
+ 
 }
 function quantiy(q,total){
- if(q==""){
-          price.innerText=total
-        }
-        else{price.innerText=total*q}
+if(q==""){
+        price.innerText=total
+      }
+      else{price.innerText=total*q}
 
 
 }
 
 function del(index){
 
-  cartarr.splice(index,1)
-  display(cartarr)
-  localStorage.setItem("CART",JSON.stringify(cartarr))
-  totalitem.innerHTML=cartarr.length
+cartarr.splice(index,1)
+display(cartarr)
+localStorage.setItem("CART",JSON.stringify(cartarr))
+totalitem.innerHTML=cartarr.length
 
 
 }
-  </script>
+
+let main=document.querySelector("#logo")
+main.addEventListener("click",function(e){
+  window.location.href="./Navbar.html"
+})
+
+
+// this is for login popup
+let login=document.getElementById("popup")
+let xyz=document.querySelector("#otp")
+
+function openpopup(){
+  login.classList.add("open_popup")
+}
+
+function closepopup(xyz){
+
+if(xyz!=""){
+  alert("OTP SEND")
+  login.classList.remove("open_popup")
+}
+
+}
+</script>
